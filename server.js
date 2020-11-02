@@ -1,6 +1,8 @@
 const express = require('express');
 const PORT = process.env.PORT|| 5000;
 
+const articleRouter = require('./routes/arcticles');
+
 const app= express();
 
 // view engine to display HTML, "ejs" -- to convert the code to HTML
