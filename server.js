@@ -1,9 +1,13 @@
 const express = require('express');
 const PORT = process.env.PORT|| 5000;
-
+const mongoose = require ('mongoose');
 const articleRouter = require('./routes/arcticles');
 
 const app= express();
+
+// mongoose.connect ('mongodb//:localhost/5000/blog',{ useNewUrlParser: true,useUnifiedTopology:true });
+
+
 
 // view engine to display HTML, "ejs" -- to convert the code to HTML
 app.set('view engine', 'ejs');
